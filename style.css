@@ -1,0 +1,53 @@
+body{
+    background: conic-gradient(at 125% 50%, #b78cf7, #ff7c94, #ffcf0d, #ff7c94, #b78cf7);
+}
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tip-calculator{
+    margin-top: 100px;
+    padding: 10px;
+    width: 400px;
+    border-radius: 6px;
+    background-color: ghostwhite;
+    box-shadow: 0 2px 4px 0 black;
+}
+.tip-calculator input{
+    width: 85%;
+    outline: none;
+    border: 1px lightgrey;
+    padding: 8px;
+
+}
+#bt{
+    outline: none;
+    border-radius: 5px 0px 0px 5px;
+    cursor: pointer;
+    border: 1px lightgrey;
+    padding:8px;
+    
+}
+select{
+    width: 97%;
+}
+#Tip-Amount{
+    visibility: hidden;
+    height: 20px;
+    width: 20%;
+    margin: auto;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    background-color: lightgreen;
+    border-radius: 5px;
+}
+#Tip-Amount.show{
+    visibility: visible;
+}
+.final:hover{
+    background-color: rgba(12, 109, 236, 0.355);
+}

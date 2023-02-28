@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="tip-calculator">
+            <h1   style="text-align: center; font-weight: bold;">Tip Calculator</h1>
+            <p style="border-bottom: 2px solid rgb(211, 211, 211, 0.5);"></p>
+            <label for="bill">Bill Amount</label>
+            <br>
+            <button id="bt"><i class="fa-solid fa-dollar-sign"></i></button><input id="Amount" type="number">
+            <br><br>
+            <label for="bill">Number of Guests</label>
+            <br>
+            <button id="bt"><i class="fa-solid fa-person"></i></button><input id="NoOfGuests" type="number">
+            <br><br>
+            <!-- <label for="bill">Service Quality</label>
+            <br>
+            <input type="text"> -->
+            <select id="quality">
+                <option disabled selected value="0">Choose...</option>
+                <option value="0.3">30% - outstanding</option>
+                <option value="0.3">20% - Good</option>
+                <option value="0.3">15% - It was Ok</option>
+                <option value="0.3">10% - Bad</option>
+                <option value="0.3">5% - Terrible</option>
+            </select>
+            <br>
+            <p style="border-bottom: 2px solid rgb(211, 211, 211, 0.5);"></p>
+            <div style="text-align: center;" >
+                <button class="final"id='bt' style="border-radius: 5px; box-shadow: 1px 0px 0px 1px;"  onclick="calculateTip()">Calculate</button>
+            </div>
+            
+        </div>
+        <div id="Tip-Amount"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
